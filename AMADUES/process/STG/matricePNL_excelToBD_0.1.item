@@ -272,7 +272,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="256">
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="__S-NMBKPEe-UefQLzpLX6Q"/>
@@ -288,9 +288,9 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;orcl&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;lakrad&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FCdAD86vBEua/6ZGnVMBE7u7BqRAfve4Di+7VHldvJ8ZwQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ONX6d9HgaK8Tf9GNg22x8Ucz+Bkihu02aqkicc13kAd4YQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;MATRICEPNL_AMADEUS&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -345,30 +345,30 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="MATRICEPNL_AMADEUS" name="tDBOutput_1">
-      <column comment="" key="false" length="-1" name="LINE_ID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="LINE_ID" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="N_COMPTE" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="N_COMPTE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="RUBRIQUE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="MULTIPLICATEUR" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="MULTIPLICATEUR" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
     <metadata connector="REJECT" label="MATRICEPNL_AMADEUS" name="REJECT">
-      <column comment="" key="false" length="-1" name="LINE_ID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="LINE_ID" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="N_COMPTE" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="N_COMPTE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="RUBRIQUE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="MULTIPLICATEUR" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="MULTIPLICATEUR" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
@@ -393,13 +393,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_01f39434-05e5-491a-814d-d5b244931228"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qW12ZQFrWyKPrG1HBNCsHpRABWn+OENZ3HO06gegm0UjXodu3xLtS9Ksljd58kTksnRufrLMghn/&#13;
-AyctT6/J3A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1d51bbac-93c2-4c9b-9ade-500a1dea9551"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aJwR1loGwEEHN/waaJUTmwzQPS81TdU88WRBWZfJYr99gc+NsIvaL0JgSBLu23P5Fw27J8oSfSFa&#13;
-pD7b7A64FQ==</DigestValue></Reference></SignedInfo><SignatureValue>Si/fYFA0h0sdj6XqMCxkGlCoPwB47wQbzYyL96Yd+MNCWFCquuSbCt1o1w8DABvTH0OvaIKbhlvU&#13;
-m3usdDvgr5sMHFdG0QM8mqpYPueG78koGjVPWhigEZqNvtLo0jLXgiVxMKtgs7ctSKZ5xEs9asfJ&#13;
-It4D6DYZxVT6tV8EOUNa5zJ5KPRpsKNeaP2UtKhxljdkTHo0bRCamJ/qh9HcOSoLUfdtZENZ63Ix&#13;
-ciFei9DxrJiZesZPVORwTqaKDpGm9w5ecmE5vdO1uAQzFAUvRbI4L9LFfTrlZSSfS4WfoDNC6Rpj&#13;
-ehLx+JYzjYnPPkuYRsqjxZh+PqozrD4JNwGpSA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_74f64b08-e4af-4429-ad23-cbc97efde3f7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rY8XFQrX3xXEA6qPObpNbyL/H1uhwUyegIWJH2yOCmWquCFFTKn0DEMSXr2cCazOpReMmB8jxcdT&#13;
+uGSq2AdBOA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_39b47a59-f2e0-4dc9-b3f7-452dc6ef94ff"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nsiOF2Cj3TZnq0rg5/12BNIkNGLImLyxw0sxvmx2VNjcIO1ZCb0i4S+jt6MLkJREVKEO9tDNyQdH&#13;
+tdvfxcejLw==</DigestValue></Reference></SignedInfo><SignatureValue>lewS2PVhqtK8geNPpEQXkSRk2uESw6WaEoDEqDSaFw9Q8veOYpuvA17bmYezT60OlJ+IkHNU0Dle&#13;
+P2cuSzCh13vOenA4gcuJJPaK2+3B4KtGYxMsgjBskrhz/Xb3aE44gz2nhTwIVkZk0M1l577ijYV5&#13;
+4ORhkteFI+4C2hUyyV6KCiqf7UgZB1nyKxXrqK2UXb9a8uQH5A6xUF8MnFeILz5haxs/FsR0AKd5&#13;
+5hn1AJH0Rt9XSzOAnFKoklukf9l4iYQYM5zzRE1UuV9FTjIqjCIKrpaXm45w+jLdSSJxqP/6uLMX&#13;
+kIhkuJTR3RsCjAOxCGyorTtaOCGXTNtQIQWwAA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -421,4 +421,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1d51bbac-93c2-4c9b-9ade-500a1dea9551" Target="#_01f39434-05e5-491a-814d-d5b244931228"><Timestamp>2024-05-15 12:26:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_39b47a59-f2e0-4dc9-b3f7-452dc6ef94ff" Target="#_74f64b08-e4af-4429-ad23-cbc97efde3f7"><Timestamp>2024-05-22 13:57:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

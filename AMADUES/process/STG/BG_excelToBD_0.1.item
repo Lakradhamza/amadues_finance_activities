@@ -282,7 +282,7 @@
       <column comment="" key="false" length="-1" name="CLASSE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="MOIS_ANNEE_BG" nullable="true" originalDbColumnName="MOIS_ANNÉE_BG" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="ANNEE_MOIS_BG" nullable="true" originalDbColumnName="ANNÉE_MOIS_BG" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -297,7 +297,7 @@
         <mapperTableEntries expression="row1.Libelle " name="LIBELLE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Solde " name="SOLDE_BG" nullable="true" type="id_Float"/>
         <mapperTableEntries expression="row1.Classe " name="CLASSE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row1.Mois+&quot;&quot;+row1.Annee " name="MOIS_ANNEE_BG" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Annee +&quot;&quot;+row1.Mois" name="ANNEE_MOIS_BG" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Exercise" nullable="true" type="id_Integer"/>
@@ -310,7 +310,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="256">
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="__S-NMBKPEe-UefQLzpLX6Q"/>
@@ -326,7 +326,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;orcl&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;lakrad&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RgKq5S/WD3ISRx5SfyRWQZPKmaXR9+Cfmt/yKgXp+MCfEQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IB+/Qg6WLE/MD/2eU6YVCNC2TlXqVU+LmipZ7Mk6cFsPww=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;BG_AMADEUS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -382,7 +382,7 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MOIS_ANNEE_BG"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANNEE_MOIS_BG"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -424,7 +424,7 @@
       <column comment="" key="false" length="-1" name="CLASSE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="MOIS_ANNEE_BG" nullable="true" originalDbColumnName="MOIS_ANNÉE_BG" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="ANNEE_MOIS_BG" nullable="true" originalDbColumnName="ANNÉE_MOIS_BG" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -450,7 +450,7 @@
       <column comment="" key="false" length="-1" name="CLASSE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="MOIS_ANNEE_BG" nullable="true" originalDbColumnName="MOIS_ANNÉE_BG" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="ANNEE_MOIS_BG" nullable="true" originalDbColumnName="ANNÉE_MOIS_BG" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
@@ -475,13 +475,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8166e541-bea2-4803-82ca-36951d31593c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qSbo2HaD71bOxIFR/Amk9I8fhf48vkRx8h4+NPMmEPvW/+wL9TzbLg7zLbO/KKNiFzurZkvq+Nda&#13;
-ryzaRd92kg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_02bf0b01-3301-40f4-bd89-d9a6ee9edbb5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/9d31HXlPzvNqVxuPTMpI7g7beNEuQrjh/iNXt52zWrq6o6areIxY5wcsRJbwIwXah8QJBahTROs&#13;
-C25Top2mvw==</DigestValue></Reference></SignedInfo><SignatureValue>A1jdbTA5jXD9IkEuan125qhwYoF2G+ipBzyEM1SLOsOnXNbM/wCmTOjSOa8Iny4m7yTXYLZYe2Jb&#13;
-gLUKPy/uqVWG07cbHECHKnc0jcfEadcsZ1N0Ap63oix24scECCLIvQIaTffWjaeLCkDvDz6xLyaJ&#13;
-c6knrW1vUnuAHxDqhgJNmkAn61Ir7F2w/efsuFPgBk72g4jiKdrrKq0VXFyqqRRpWosj1MDIto2f&#13;
-K3Dx5QF/NZobVufxNSRDuZAeJrBnFQlIrneLHkqNtmk1VYN87k0PfJug/ytGJBV/v8kcFYuv4m3b&#13;
-fb7t9/0aed9KILhdefLkEzWXgthTAoYsWEgfFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_92e4b80f-0e06-4935-b7f7-beaa36cf8331"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wJWDmkOu5GaFUmHdY2lJVnmZEVN3WbbBTDLNvtGLiz3bcxGIBjxVcG8J8mN1oKPFXnekCUV6t482&#13;
+vbKQejhr/w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_96ae4864-f0f3-4f47-bc47-f0c2fbc1b003"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cFX0Bnogy7tMJRjZD3FkUSWvWr/RWc16AL6l3rwSRBuSnZeWaWvNsaYB8X+JEPlt7rqxM9m7Ml2D&#13;
+afgCrE+yuQ==</DigestValue></Reference></SignedInfo><SignatureValue>ALu6YNKuZHktHPPLyeeot7ALYd+NJkLWDEvMNpVTfyXmpsJZxio9ay1GIQlluoWZR7uPMUwf/6eW&#13;
+/8iCkmqHGUjuYC5K7L0Sr+GNW6rU53O/fTRFs2ktjvDgnQrmvQHXnK5dkxXJ+uASP7MPPgavTdW3&#13;
+9jKmLljy7O0GRun8yxXr4djPrb246C3MH6g8MiUL/DI4N8r4TaowO1Z71vr6vN05421c8oZ0DGG5&#13;
+uuHfm2gYoGmhnXN54cApLLOaWs5GZN0ZDy9Er2496AJ2ecNTOWQ1DCBhB5fBbyGMHvTiCaVj7LSd&#13;
+f8b9/MKD61t6+VRYyFBMERZiYG52BiuUFHPO7Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -503,4 +503,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_02bf0b01-3301-40f4-bd89-d9a6ee9edbb5" Target="#_8166e541-bea2-4803-82ca-36951d31593c"><Timestamp>2024-05-21 15:44:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_96ae4864-f0f3-4f47-bc47-f0c2fbc1b003" Target="#_92e4b80f-0e06-4935-b7f7-beaa36cf8331"><Timestamp>2024-05-22 14:43:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
