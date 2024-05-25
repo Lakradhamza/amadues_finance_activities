@@ -39,6 +39,10 @@
     "id" : "__S-NMBKPEe-UefQLzpLX6Q - BG_AMADEUS",
     "version" : "Latest",
     "type" : "schema"
+  }, {
+    "id" : "__S-NMBKPEe-UefQLzpLX6Q - BN_AMADEUS",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
@@ -94,6 +98,10 @@
     "type" : "property"
   }, {
     "id" : "__S-NMBKPEe-UefQLzpLX6Q - BG_AMADEUS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "__S-NMBKPEe-UefQLzpLX6Q - MATRICEMUL_AMADEUS",
     "version" : "Latest",
     "type" : "schema"
   }, {
