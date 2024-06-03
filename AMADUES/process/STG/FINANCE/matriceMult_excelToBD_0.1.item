@@ -148,16 +148,16 @@
       <column comment="" key="false" length="18" name="Solde_BN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="256">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_plhDcBKpEe-xv7Pe3uGhkw"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_cKYgwBK5Ee-xv7Pe3uGhkw"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/hamza/Downloads/TDB filiales/AMADEUS MAROC/Finance/Matrice P&amp;L AMADEUS.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:9G8ZMxHBs9TDaikw8z8A8zcrLfxPgXgVUvhlmwl5"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/hamza/Downloads/TDB filiales/AMADEUS MAROC/Finance/Matrice Multiplicateurs Amadeus.xlsx&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:+UBXXYlLd5F4upTWxGW2zpi3r4Ir/KkIVSOQzR4v"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
-      <elementValue elementRef="SHEETNAME" value="&quot;MAP&quot;"/>
+      <elementValue elementRef="SHEETNAME" value="&quot;Sheet1&quot;"/>
       <elementValue elementRef="USE_REGEX" value=""/>
     </elementParameter>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -168,32 +168,22 @@
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_plhDcBKpEe-xv7Pe3uGhkw - metadata"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_cKYgwBK5Ee-xv7Pe3uGhkw - metadata"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_plhDcBKpEe-xv7Pe3uGhkw - metadata"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_cKYgwBK5Ee-xv7Pe3uGhkw - metadata"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="','"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="'.'"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="LineID"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Etiquettes_de_lignes"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Affectation_Reporting"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Multiplicateur"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
     <elementParameter field="TABLE" name="DATESELECT" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="LineID"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Etiquettes_de_lignes"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Affectation_Reporting"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Multiplicateur"/>
@@ -210,18 +200,14 @@
     <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
     <elementParameter field="CHECK" name="CONFIGURE_INFLATION_RATIO" value="false"/>
     <elementParameter field="TEXT" name="INFLATION_RATIO" show="false" value=""/>
-    <elementParameter field="TEXT" name="LABEL" value="MatricePNL_amadeus"/>
+    <elementParameter field="TEXT" name="LABEL" value="MatriceMult_amadeus"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
-      <column comment="" key="false" length="2" name="LineID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Etiquettes_de_lignes" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="26" name="Affectation_Reporting" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Multiplicateur" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="2" name="LineID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Etiquettes_de_lignes" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="26" name="Affectation_Reporting" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Multiplicateur" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -232,7 +218,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_ESYPABKnEe-xv7Pe3uGhkw-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_OaQ_0BK5Ee-xv7Pe3uGhkw-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -241,14 +227,8 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MATRICEPNL_AMADEUS" name="PNL_to_DB">
-      <column comment="" key="false" length="-1" name="LINE_ID" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
+    <metadata connector="FLOW" label="MATRICEMUL_AMADEUS" name="MMtoDB">
       <column comment="" key="false" length="-1" name="N_COMPTE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="RUBRIQUE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="MULTIPLICATEUR" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
@@ -258,21 +238,17 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="PNL_to_DB" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1.LineID " name="LINE_ID" nullable="true" type="id_Integer"/>
+      <outputTables name="MMtoDB" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.Etiquettes_de_lignes " name="N_COMPTE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row1.Affectation_Reporting " name="RUBRIQUE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Multiplicateur " name="MULTIPLICATEUR" nullable="true" type="id_Integer"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="LineID" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Etiquettes_de_lignes" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Affectation_Reporting" nullable="true" type="id_String"/>
         <mapperTableEntries name="Multiplicateur" nullable="true" type="id_Integer"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="__S-NMBKPEe-UefQLzpLX6Q"/>
@@ -288,8 +264,8 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;orcl&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;lakrad&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xy0coFE+GR7DnjFEha1QYZHAmLtb/3P4AaLMFh8jba8NmA=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;MATRICEPNL_AMADEUS&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:er3ICMnSxh9jsqIcmciFUWv6ABbkanfOGerOwrVOo42+Gg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;MATRICEMUL_AMADEUS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -309,17 +285,7 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="LINE_ID"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="N_COMPTE"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RUBRIQUE"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -344,28 +310,16 @@
     <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MATRICEPNL_AMADEUS" name="tDBOutput_1">
-      <column comment="" key="false" length="-1" name="LINE_ID" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
+    <metadata connector="FLOW" label="MATRICEMUL_AMADEUS" name="tDBOutput_1">
       <column comment="" key="false" length="-1" name="N_COMPTE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="RUBRIQUE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="MULTIPLICATEUR" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
-    <metadata connector="REJECT" label="MATRICEPNL_AMADEUS" name="REJECT">
-      <column comment="" key="false" length="-1" name="LINE_ID" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
+    <metadata connector="REJECT" label="MATRICEMUL_AMADEUS" name="REJECT">
       <column comment="" key="false" length="-1" name="N_COMPTE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="RUBRIQUE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="MULTIPLICATEUR" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
@@ -379,9 +333,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="PNL_to_DB" lineStyle="0" metaname="PNL_to_DB" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="MMtoDB" lineStyle="0" metaname="MMtoDB" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="PNL_to_DB"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MMtoDB"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
@@ -393,13 +347,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_53df1fe1-c754-44e3-84f4-2cac40d6eb68"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gJF7oujcLKZ+Xuf8FQVbdImCpMgmjQZTPDDfz03xYSiAf4GF6pUekhBy/rEXovnzXHU5EJY3lNy/&#13;
-1G1uMqV/gg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_74c75564-f294-46b5-99e9-478254aed5de"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WHdr0kJKPN/Xvt3XAHch9YJkH+b5Z3+ok6WSmnNahIMMDPTVX1CdM9V8MQzolPDbQH2pN3+H8Q+d&#13;
-1KoUEHR6Tw==</DigestValue></Reference></SignedInfo><SignatureValue>acWeriVCYGcha1AgsWZK9Y7hMvfV+/JwNXCtcXNXsTogrVEkgVHopTAyTw7s9YJS4ZFUXa0gFetL&#13;
-r6dUcs6zrnIAwmpykUsA3fB+qKxTDZ5KU0FyOKrcMZqhz/hAyefmdb2WLYdemGi++5XwpDppB3Il&#13;
-b2QAisTWP+pPdbmzFY7DUrJWZX1oSRpqu3mCw1qyGfbuo/gcJ1FtcKK0V5a1YP9Tm9AxvX5dG84r&#13;
-InHWXlduvVsJIfFQ7eqRDg/n8P+GEAo98MCkK1vyYjTMBZxUnlquQM+n82Dh0MlUlXlWYbUrJLXJ&#13;
-a7WEkqg1Vl7AGNzNgCirRrVYLzp63rxqpze9Wg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b96e182b-2928-4638-8bb9-39ecab3e2afb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PVr3PeTJNVfKUvXOJB5dnI7bgt2EmOumZlrzR6XRdMBydjhTIKt4HtiB8u7wKV7JB0qdkwuq2qTN&#13;
+CTwAMkpQAA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_765facd0-a7dc-4be8-baf3-f60eaf8cdfbb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ObE6U0fClnMZTM9Jo3xIacj1thWmo1IlCd+CZ4XupeWk+Fcb8AjTU/qCEGWKD1cJq3voO+c1yG8y&#13;
+WxYI9xLvRg==</DigestValue></Reference></SignedInfo><SignatureValue>U8JLbHvtPIDEmYS9gaHrq953sAwwD4lOgyBtUDQT+bI2K4Sq3nMRN0Z6MCmHdTDBHy73Gr18uzLY&#13;
+/bkBLI05AIxFWX+yKgs/6UeFr04P9BpSfd4tbm/VFJ4LlE2qG/aU35sKaRvnvFMt4aCFDUu0/ARb&#13;
+FM4nSgFlh1KV1j7LmwUCDfwUeKWYnjJiaABEINxeLnseLuLbbpWPZ68ygkhBtXPNj70nbPWtRLV2&#13;
+cJZiHc27JSlrIGLVefK0KaNxVCbgg6+qNAd6STZsUZmf44QNsYiMN06F9aWRJuiWZBfOe3pDcnxL&#13;
+cu8HdYNA6uCjaO+fMIqE30BD5IGCMPsrJOPXHQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -421,4 +375,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_74c75564-f294-46b5-99e9-478254aed5de" Target="#_53df1fe1-c754-44e3-84f4-2cac40d6eb68"><Timestamp>2024-05-24 07:51:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_765facd0-a7dc-4be8-baf3-f60eaf8cdfbb" Target="#_b96e182b-2928-4638-8bb9-39ecab3e2afb"><Timestamp>2024-05-28 09:26:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

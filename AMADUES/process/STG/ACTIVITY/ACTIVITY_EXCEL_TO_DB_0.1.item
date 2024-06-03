@@ -97,67 +97,27 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <routinesParameter id="_X92PsBKJEe-UefQLzpLX6Q" name="SQLike"/>
     <routinesParameter id="_X_3o8BKJEe-UefQLzpLX6Q" name="DataOperation"/>
     <routinesParameter id="_YAD2MBKJEe-UefQLzpLX6Q" name="Mathematical"/>
     <routinesParameter id="_YBqYsBKJEe-UefQLzpLX6Q" name="Numeric"/>
     <routinesParameter id="_YB0JsBKJEe-UefQLzpLX6Q" name="Relational"/>
+    <routinesParameter id="_X92PsBKJEe-UefQLzpLX6Q" name="SQLike"/>
     <routinesParameter id="_YB-hwBKJEe-UefQLzpLX6Q" name="StringHandling"/>
     <routinesParameter id="_YCI50BKJEe-UefQLzpLX6Q" name="TalendDataGenerator"/>
     <routinesParameter id="_YCe4EBKJEe-UefQLzpLX6Q" name="TalendDate"/>
-    <routinesParameter id="_YCna8BKJEe-UefQLzpLX6Q" name="TalendString"/>
     <routinesParameter id="_YC_OYBKJEe-UefQLzpLX6Q" name="TalendStringUtil"/>
+    <routinesParameter id="_YCna8BKJEe-UefQLzpLX6Q" name="TalendString"/>
   </parameters>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Line_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Annee"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="compte_BN"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="mois"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rubrique_BN"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Solde_BN"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tLogRow_1">
-      <column comment="" key="false" length="2" name="Line_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Annee" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="compte_BN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="mois" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="Rubrique_BN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="Solde_BN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="256">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_2"/>
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_4"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_SndDsBKSEe-UefQLzpLX6Q"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_GYWM0Bz2Ee-D5vwpFArkvQ"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/hamza/Downloads/TDB filiales/AMADEUS MAROC/Finance/BN Amadeus.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:LdQFuRm6o2Qcq+ToR5OEGTQKmABbQBC3ULcuq4dL"/>
-    <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
-    <elementParameter field="TABLE" name="SHEETLIST" show="false">
-      <elementValue elementRef="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/hamza/Desktop/PFE/les Filiales/AMADEUS/Activité/Indicateurs activité 8 mod.xlsx&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:MbdA74lw8+lomcsgp3Y7MRUC1bcMmggLzoZgBpWY"/>
+    <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
+    <elementParameter field="TABLE" name="SHEETLIST">
+      <elementValue elementRef="SHEETNAME" value="&quot;activité&quot;"/>
       <elementValue elementRef="USE_REGEX" value=""/>
     </elementParameter>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -167,44 +127,56 @@
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_GYWM0Bz2Ee-D5vwpFArkvQ - metadata"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_SndDsBKSEe-UefQLzpLX6Q - metadata"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_GYWM0Bz2Ee-D5vwpFArkvQ - metadata"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="','"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="'.'"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Line_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Annee"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_RUB"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="compte_BN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="M"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTD_N"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTD_N_1_acti"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Budget"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="mois"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rubrique_BN"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Solde_BN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="annee"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
     <elementParameter field="TABLE" name="DATESELECT" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Line_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Annee"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_RUB"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="compte_BN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="M"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTD_N"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTD_N_1_acti"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Budget"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="mois"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rubrique_BN"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Solde_BN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="annee"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
     </elementParameter>
@@ -218,32 +190,37 @@
     <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
     <elementParameter field="CHECK" name="CONFIGURE_INFLATION_RATIO" value="false"/>
     <elementParameter field="TEXT" name="INFLATION_RATIO" show="false" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="activ"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_2">
-      <column comment="" key="false" length="2" name="Line_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Annee" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="compte_BN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_4">
+      <column comment="" key="false" length="1" name="ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="NOM_RUB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="M" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="YTD_N" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="YTD_N_1_acti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Budget" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="mois" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="Rubrique_BN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="Solde_BN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="annee" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="2" name="Line_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Annee" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="compte_BN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="NOM_RUB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="M" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="YTD_N" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="YTD_N_1_acti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Budget" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="mois" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="Rubrique_BN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="Solde_BN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="annee" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_eRZ0QBKQEe-UefQLzpLX6Q-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_igoloBzUEe-D5vwpFArkvQ-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -252,60 +229,66 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="BN_AMADEUS" name="copyOfexcToBD">
-      <column comment="" key="false" length="-1" name="LINE_ID" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+    <metadata connector="FLOW" label="ACTIVITY" name="ACTI_EX_TO_DB">
+      <column comment="" key="false" length="-1" name="ID_LINE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="ANNEE_BN" nullable="true" originalDbColumnName="ANNÉE_BN" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="50" name="NOM_RUB_ACTI" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="N_COMPTE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="M_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="MOIS_BN" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="YTD_N_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="RUBRIQUE_BN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="YTD_N_1_acti" nullable="true" originalDbColumnName="YTD N-1 acti" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="SOLDE_BN" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="BUDGET_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="EXERCISE_BN" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Ecart_Budget" nullable="true" originalDbColumnName="Ecart Budget" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="ANNEE_MOIS_BN" nullable="true" originalDbColumnName="ANNÉE_MOIS_BN" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Ecart_YTD_N_1" nullable="true" originalDbColumnName="Ecart YTD N-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="N_COMPTE_ANNEE_MOIS_BN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="MOIS" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="ANNEE" nullable="true" originalDbColumnName="ANNÉE" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="copyOfexcToBD" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row2.Line_ID " name="LINE_ID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.Annee " name="ANNEE_BN" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.compte_BN " name="N_COMPTE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.mois " name="MOIS_BN" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.Rubrique_BN " name="RUBRIQUE_BN" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Solde_BN " name="SOLDE_BN" nullable="true" type="id_Float"/>
-        <mapperTableEntries expression="(row2.mois  == 11 || row2.mois  == 12) ? row2.Annee  + 1 : row2.Annee " name="EXERCISE_BN" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.Annee +&quot;&quot;+row2.mois" name="ANNEE_MOIS_BN" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.compte_BN +&quot;&quot;+row2.Annee +&quot;&quot;+row2.mois" name="N_COMPTE_ANNEE_MOIS_BN" nullable="true" type="id_String"/>
+      <outputTables name="ACTI_EX_TO_DB" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.ID " name="ID_LINE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.NOM_RUB " name="NOM_RUB_ACTI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.M " name="M_ACTI" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row3.YTD_N " name="YTD_N_ACTI" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row3.YTD_N_1_acti " name="YTD_N_1_acti" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row3.Budget " name="BUDGET_ACTI" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="(row3.YTD_N - row3.Budget )/row3.Budget " name="Ecart_Budget" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="(row3.YTD_N - row3.YTD_N_1_acti )/row3.YTD_N_1_acti " name="Ecart_YTD_N_1" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row3.mois " name="MOIS" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.annee " name="ANNEE" nullable="true" type="id_Integer"/>
       </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="Line_ID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Annee" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="compte_BN" nullable="true" type="id_Integer"/>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="NOM_RUB" nullable="true" type="id_String"/>
+        <mapperTableEntries name="M" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="YTD_N" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="YTD_N_1_acti" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Budget" nullable="true" type="id_Float"/>
         <mapperTableEntries name="mois" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Rubrique_BN" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Solde_BN" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="annee" nullable="true" type="id_Integer"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="256">
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="__S-NMBKPEe-UefQLzpLX6Q"/>
@@ -321,8 +304,8 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;orcl&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;lakrad&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FKWq9Yg0sa5CInfZzgkI+9XZW2q9ukIGqVP4TFULYtTo3w=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;BN_AMADEUS&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:p7JgWt/dA2HEBpiFV7iPT33npAmzMFOT+xAnxRfNSO7DFg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ACTIVITY&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -342,47 +325,52 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="LINE_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_LINE"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ANNEE_BN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_RUB_ACTI"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="N_COMPTE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="M_ACTI"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MOIS_BN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTD_N_ACTI"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RUBRIQUE_BN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTD_N_1_acti"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SOLDE_BN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BUDGET_ACTI"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXERCISE_BN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ecart_Budget"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ANNEE_MOIS_BN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ecart_YTD_N_1"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="N_COMPTE_ANNEE_MOIS_BN"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOIS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANNEE"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -402,92 +390,93 @@
     <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="BN_AMADEUS" name="tDBOutput_1">
-      <column comment="" key="false" length="-1" name="LINE_ID" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+    <metadata connector="FLOW" label="ACTIVITY" name="tDBOutput_1">
+      <column comment="" key="false" length="-1" name="ID_LINE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="ANNEE_BN" nullable="true" originalDbColumnName="ANNÉE_BN" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="50" name="NOM_RUB_ACTI" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="N_COMPTE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="M_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="MOIS_BN" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="YTD_N_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="RUBRIQUE_BN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="YTD_N_1_acti" nullable="true" originalDbColumnName="YTD N-1 acti" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="SOLDE_BN" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="BUDGET_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="EXERCISE_BN" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Ecart_Budget" nullable="true" originalDbColumnName="Ecart Budget" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="ANNEE_MOIS_BN" nullable="true" originalDbColumnName="ANNÉE_MOIS_BN" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Ecart_YTD_N_1" nullable="true" originalDbColumnName="Ecart YTD N-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="N_COMPTE_ANNEE_MOIS_BN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="MOIS" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="ANNEE" nullable="true" originalDbColumnName="ANNÉE" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
-    <metadata connector="REJECT" label="BN_AMADEUS" name="REJECT">
-      <column comment="" key="false" length="-1" name="LINE_ID" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+    <metadata connector="REJECT" label="ACTIVITY" name="REJECT">
+      <column comment="" key="false" length="-1" name="ID_LINE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="ANNEE_BN" nullable="true" originalDbColumnName="ANNÉE_BN" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="50" name="NOM_RUB_ACTI" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="N_COMPTE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="M_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="MOIS_BN" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="YTD_N_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="RUBRIQUE_BN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="YTD_N_1_acti" nullable="true" originalDbColumnName="YTD N-1 acti" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="SOLDE_BN" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="BUDGET_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="EXERCISE_BN" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Ecart_Budget" nullable="true" originalDbColumnName="Ecart Budget" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="ANNEE_MOIS_BN" nullable="true" originalDbColumnName="ANNÉE_MOIS_BN" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Ecart_YTD_N_1" nullable="true" originalDbColumnName="Ecart YTD N-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="N_COMPTE_ANNEE_MOIS_BN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="MOIS" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="ANNEE" nullable="true" originalDbColumnName="ANNÉE" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_2" target="tMap_2">
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputExcel_4" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_4" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
-  <connection connectorName="FLOW" label="copyOfexcToBD" lineStyle="0" metaname="copyOfexcToBD" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="ACTI_EX_TO_DB" lineStyle="0" metaname="ACTI_EX_TO_DB" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfexcToBD"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ACTI_EX_TO_DB"/>
   </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_4"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_adb969f0-7e20-4c12-9001-fc3b2a963d1c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HeDefg7AVrrdgJ+wed4CH4fYhlKmyXe9oD9SXA3qhLxVn4d5D5hZ+1kFQ28JP5Abt5IKDWDUv0Zf&#13;
-AvHSQH8FUw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fccedad8-9830-4603-8b58-b394e03b3d4e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NW4nCRTl0rFdHbQkG1QlRaTsd4trrHg1qfIjxk/kOyTFpbhFon4aqLDNn6ClO13nG3kqvrqM+tbw&#13;
-ih4yO+e0pA==</DigestValue></Reference></SignedInfo><SignatureValue>Fgwk+L56rd6P2lDnrFmkk+tbjbjVjDdLkhwDiSQ8LIq7vls4h7v1yQQ87QduqeHJkJBViecRonBU&#13;
-HWtG3jCXVJIU/uVk4B+Y1f6p9fldONFUUT9VfkVTxgIvJDLIRqjVUC+bLB0XzVHgMRKH6/aaIyG1&#13;
-tcDtFSfDhc3Was068zu/qOR383UtjCfa7p2v0YabNzQEtsRlJh2dmeAdk4jb8G2jJTYBOHWzPhvb&#13;
-i6e0eyOxkGpmkhdCCHCl0g0rIhzXQ2Pe94OHQ0eQi34AuX4wRgQ1cuZlGqyTgoj7BicSfksQ3ESr&#13;
-9FcOKnNxMWvoumrDr8Y0kOlHxopw8HFOQD6m9A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_95f02cd4-588d-4765-978e-dd405a1732f5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Vby7epBXk47lNX515jJhsWXmBjard4rT2KyLV6PkW53Hk1m6CdECOT2cZtKLOGH2cKGAEe6fKy1i&#13;
+O/TmvPVRKg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_224fff0f-d2ee-4dd4-bade-e02f1c400442"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FRTbcJ7GhwhhcUKycM8iI+9ujG9Ktwa4mhJ7tzuh7bJtlpwWSzjsrILd2VFxAxvbYnKRB99h1W1D&#13;
+jwbltZ+8OQ==</DigestValue></Reference></SignedInfo><SignatureValue>MCViIfWGyFxlSiruNIPa5QfvCmLFJLv/SoVr0R8BLuKIfF4Afc/U/C104DKCSIkwYawcbVzmYK1j&#13;
+2Ve80Mm7EMeCzkdokRAmIx6rgUF5JGwAjD0iKAG+frNELU/CPxwKl0un5c1NFsThbqB7TbzA/kEj&#13;
+35maKamabbZhUIev+qqyErbdMBXXipFD0rCn9hYGo84YiHfuUjzmy6WPEwMoHrTBYUg+mozgJptf&#13;
+Y0LYAurWA1xxe61wAYo8SrnjWRrh/fpHJwWLCcs8CegeT7oRkUWWfh5rCsqioSHbVwPNUnRXBYfZ&#13;
+Vt1wldDyLRP39tTvVXmq4jEnISuVAZ7+AQNnIA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -509,4 +498,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fccedad8-9830-4603-8b58-b394e03b3d4e" Target="#_adb969f0-7e20-4c12-9001-fc3b2a963d1c"><Timestamp>2024-05-24 15:07:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_224fff0f-d2ee-4dd4-bade-e02f1c400442" Target="#_95f02cd4-588d-4765-978e-dd405a1732f5"><Timestamp>2024-05-28 14:00:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
