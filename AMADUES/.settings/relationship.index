@@ -9,11 +9,15 @@
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_v7mnAB3GEe-TnJFOkoocUg",
+    "id" : "__S-NMBKPEe-UefQLzpLX6Q",
     "version" : "Latest",
     "type" : "property"
   }, {
     "id" : "_LIi8sBglEe-cn_cbw8IGcg - DIM_TEMPS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "__S-NMBKPEe-UefQLzpLX6Q - TABLE_KPI",
     "version" : "Latest",
     "type" : "schema"
   } ]
@@ -98,6 +102,25 @@
     "type" : "property"
   }, {
     "id" : "__S-NMBKPEe-UefQLzpLX6Q - EFFECTIF",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_HoBXQCcCEe-VmN7FMlee-g",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "__S-NMBKPEe-UefQLzpLX6Q",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_v7mnAB3GEe-TnJFOkoocUg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "__S-NMBKPEe-UefQLzpLX6Q - TABLE_KPI",
     "version" : "Latest",
     "type" : "schema"
   } ]
