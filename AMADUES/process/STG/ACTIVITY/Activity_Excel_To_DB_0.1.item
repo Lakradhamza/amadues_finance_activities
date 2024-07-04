@@ -108,13 +108,13 @@
     <routinesParameter id="_YC_OYBKJEe-UefQLzpLX6Q" name="TalendStringUtil"/>
     <routinesParameter id="_YCna8BKJEe-UefQLzpLX6Q" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_4"/>
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_GYWM0Bz2Ee-D5vwpFArkvQ"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/hamza/Desktop/PFE/les Filiales/AMADEUS/Activité/Indicateurs activité 8 mod.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:MbdA74lw8+lomcsgp3Y7MRUC1bcMmggLzoZgBpWY"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/hamza/Desktop/PFE/les Filiales/AMADEUS/Activité/Indicateurs activité forma standard.xlsx&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:uw9K+89B8Q8PNcjQounlgr2Y1X1rzAClG5Bp+QBH"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;activité&quot;"/>
@@ -192,7 +192,7 @@
     <elementParameter field="TEXT" name="INFLATION_RATIO" show="false" value=""/>
     <elementParameter field="TEXT" name="LABEL" value="activ"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_4">
+    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
       <column comment="" key="false" length="1" name="ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="NOM_RUB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="M" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
@@ -457,7 +457,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputExcel_4" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_4" target="tMap_1">
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="-19" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
@@ -466,17 +466,17 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ACTI_EX_TO_DB"/>
   </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_4"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_634e6734-12eb-430e-9e02-c25fa2970cfa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Vby7epBXk47lNX515jJhsWXmBjard4rT2KyLV6PkW53Hk1m6CdECOT2cZtKLOGH2cKGAEe6fKy1i&#13;
-O/TmvPVRKg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_618cab0b-8718-4593-84b4-05121d0ce440"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vef8PvrIdvQUq9385R9ZV28TnOSz3kXJ1A+UyjuGfzPe2RHIPSUlG0Xt41dZr/7LXHo3Cjtcs6kW&#13;
-39JD+4UlSg==</DigestValue></Reference></SignedInfo><SignatureValue>hbsMX0UMsPQuY5BE7fmpUygk6TyvSkHRQat1jo/SJkiD0uE+cnrNDFF+SRGpS+k9rb6Fvi4VxyZQ&#13;
-+2I0iOKI4f0LCIqLQIMkdH/wejsIAVkvFUkhqB0sFgYYeP7wjaiXwZc/QGAEwuvzuOfaXVZ509z9&#13;
-qyeqd2G9FIaek+QMclbOPjlw37Rqr5vhABpECvfNUO5YVcZofeQClgPadEkTcRZ+91alzym7JuJE&#13;
-0TfFXt6W1z6RQCNRj58Lfci+LvEUQXmmTUxFFy1i2EdKs3h4ZS/63ouOwwEQNMTi5qsUfhqPUYgC&#13;
-aQ/1k0+AEUZnGhhkQySpBBvMuFWheYYUrXaK6w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_20e559ff-31f1-42d0-b389-173416aee2bf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jKW0ySRbv53twfbahHGiVhcoREEh1EgBRjtAzUiQ5s5aZFWIXERkrRg9p/U8x2n27pr499l8jjKl&#13;
+HvewvIswlw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f8da9711-d907-4a38-af67-ddc696c20b18"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cXImWSjSNR97cwQmu0SaIIxfDRg6WEJPSxJvv/OajbYOOvzzau4qIQqUD8Pb3Aab6so7ky7/8b7s&#13;
+Yc09TZK9bA==</DigestValue></Reference></SignedInfo><SignatureValue>QGKUsAGrZ8WqBgNtJGzy6WROG7udemWl8/OevXTPYbnKXJw8vroYPNWvtZdNkc0+nXZNCjik29Cd&#13;
++ALwIXd4htSeLz/Z78/GdTeVRskSAdDoZhfxA7e/qoS1FwnTjbNWjdl8muioIzZWSqeqAGR+M7ya&#13;
+qBHRhu3XALuddYGsjhsfVpTLL2/RWItYtqNLaUm6hqgm98C1MHhpo4tnqf/kDRSM9f+ETW+s8J2L&#13;
+9xMOhHmZtP8pinc4JQVOk8r7gY9+B/Qke49f8hKRpPrJ9ng5v2qlZ439S/tHps7QFrMeYENBAuBO&#13;
+VIRDjucAHhrxc+g74CCcoSUC8uH2bLkr6BhkOQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -498,4 +498,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_618cab0b-8718-4593-84b4-05121d0ce440" Target="#_634e6734-12eb-430e-9e02-c25fa2970cfa"><Timestamp>2024-06-07 20:10:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f8da9711-d907-4a38-af67-ddc696c20b18" Target="#_20e559ff-31f1-42d0-b389-173416aee2bf"><Timestamp>2024-06-30 16:25:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

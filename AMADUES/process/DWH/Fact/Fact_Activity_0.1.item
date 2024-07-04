@@ -226,7 +226,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="FACT_ACTIVITY" name="activity_FACT">
-      <column key="false" length="-1" name="ID_DIM_TEMPS_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column key="false" length="-1" name="ID_DIM_TEMPS" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column key="false" length="-1" name="ID_RUB_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
@@ -255,7 +255,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="activity_FACT" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row3.ID_DIM_TEMPS " name="ID_DIM_TEMPS_ACTI" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.ID_DIM_TEMPS " name="ID_DIM_TEMPS" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row2.ID_RUB_ACTI " name="ID_RUB_ACTI" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row1.M_ACTI " name="M_ACTI" nullable="true" type="id_Float"/>
         <mapperTableEntries expression="row1.YTD_N_ACTI " name="YTD_N_ACTI" nullable="true" type="id_Float"/>
@@ -458,7 +458,7 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID_DIM_TEMPS_ACTI"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_DIM_TEMPS"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -514,54 +514,54 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="FACT_ACTIVITY" name="tDBOutput_2">
-      <column key="false" length="-1" name="ID_DIM_TEMPS_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column key="false" length="-1" name="ID_DIM_TEMPS" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="ID_RUB_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column key="false" length="-1" name="ID_RUB_ACTI" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="M_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="M_ACTI" nullable="true" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="YTD_N_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="YTD_N_ACTI" nullable="true" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="YTD_N_1_acti" nullable="true" originalDbColumnName="YTD N-1 acti" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="YTD_N_1_acti" nullable="true" originalDbColumnName="YTD N-1 acti" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="BUDGET_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="BUDGET_ACTI" nullable="true" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Ecart_YTD_N_1" nullable="true" originalDbColumnName="Ecart YTD N-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="Ecart_YTD_N_1" nullable="true" originalDbColumnName="Ecart YTD N-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Ecart_Budget" nullable="true" originalDbColumnName="Ecart Budget" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="Ecart_Budget" nullable="true" originalDbColumnName="Ecart Budget" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
     <metadata connector="REJECT" label="FACT_ACTIVITY" name="REJECT">
-      <column key="false" length="-1" name="ID_DIM_TEMPS_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column key="false" length="-1" name="ID_DIM_TEMPS" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="ID_RUB_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column key="false" length="-1" name="ID_RUB_ACTI" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="M_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="M_ACTI" nullable="true" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="YTD_N_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="YTD_N_ACTI" nullable="true" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="YTD_N_1_acti" nullable="true" originalDbColumnName="YTD N-1 acti" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="YTD_N_1_acti" nullable="true" originalDbColumnName="YTD N-1 acti" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="BUDGET_ACTI" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="BUDGET_ACTI" nullable="true" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Ecart_YTD_N_1" nullable="true" originalDbColumnName="Ecart YTD N-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="Ecart_YTD_N_1" nullable="true" originalDbColumnName="Ecart YTD N-1" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Ecart_Budget" nullable="true" originalDbColumnName="Ecart Budget" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column key="false" length="-1" name="Ecart_Budget" nullable="true" originalDbColumnName="Ecart Budget" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
@@ -589,13 +589,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_adf305d1-dd74-407a-b37e-2ad819712f98"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/q1WlZqfJoPZIVD2OAKbRTsydO8i8co3LAq99mJgba/GIgzJYrk9kObp/mQsIOqoCG/9WbAZN7oS&#13;
-LMEIbYbDlw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6e1053d1-8b66-4c91-add3-281de81f8dca"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1lFN+rIvCqtWWajYK87Fysq47Dq39rb1ccodO961USlayu93HbE4MiCGyjJG/dEYUBuYZ4t34+gj&#13;
-Y6TXyTedfQ==</DigestValue></Reference></SignedInfo><SignatureValue>YIZHOBO49l54UeWydgJsKGZTZzsWfOdEdnshiiKKVWwcRRAmFqlCbN/XxPAo+wyEwhqldiBG4Sp5&#13;
-+8JqLE4PDTcsE4LHmiC1nTfnFh7I0LE/SQK7GZ0qElYIaq5iiFoZ0X04xTH4c4InNpuPR1YDkawU&#13;
-QxG8sS285zmvQyRnsoi5oD6YIY0SHsHtFUsZzz59GjOnJMAM8YWcvYewcTIhNqcorrfqKQm7UFa7&#13;
-gL1tbJde8IUtQWcNEIQBo0ps5aqTeI+5lHwURvs5VvEGSND4+NCvCT/IlKU7ElZjsm+NFvTAXwxe&#13;
-LTFqzXdaVAW9/HgJtyVoweP+2hM/A04C0JJ6vg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b1507a9a-c6a5-497b-af23-a096b3662f1e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wFJMeKQNZ/S1HEHUqvKBwiFERmqwwBZAFTbekqMqlAj1iVIM6hXPBvFNrTYPiE4NIofoWvExPI8z&#13;
+eeHhto9GAQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dcf9d011-ddd5-4298-baed-30b81169864c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eq/6YIMrviYa6+OE6EEnOl2kvSWTBwQSy4fV6rBmvWo255W7dJms5I9EJldU5bVyi7fE49ObwaXv&#13;
+08/Q9Wk68Q==</DigestValue></Reference></SignedInfo><SignatureValue>PfMNKu3+MbFaCEsdQWxhLQV05caPqymWjK4CQNmxsIno26QICy6DaRcmdCqjoSogVQI9I2fLTdmn&#13;
+Hdcn5Pz9MHtPbR2u7sVCCr8lRTcrKTXBhwZ+osNzh5ADvm9T9+bl72dRt61ocJjX5mU2R1l2RTlY&#13;
+05In28fyHUqDQxL5PRQIevLc7ea7k5gVxygeVYFmSsFQ0dGHXL5hPx6W58GLXD+rtzUGsI5zRD7H&#13;
+/us1j5qmcJHoJ3Vg8TKD9/Q6vJsIBdrK6GeVZJ2kC5heak2XCaHSDxNQcplliLkuKsZtsd171jM/&#13;
+DdcTkV118sIcutKULtUIMk6JvytE7eD2r1uw3Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -617,4 +617,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6e1053d1-8b66-4c91-add3-281de81f8dca" Target="#_adf305d1-dd74-407a-b37e-2ad819712f98"><Timestamp>2024-05-29 15:35:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dcf9d011-ddd5-4298-baed-30b81169864c" Target="#_b1507a9a-c6a5-497b-af23-a096b3662f1e"><Timestamp>2024-06-24 09:42:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

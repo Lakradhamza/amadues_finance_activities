@@ -108,16 +108,16 @@
     <routinesParameter id="_YC_OYBKJEe-UefQLzpLX6Q" name="TalendStringUtil"/>
     <routinesParameter id="_YCna8BKJEe-UefQLzpLX6Q" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_v7mnAB3GEe-TnJFOkoocUg"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_vVyXYDICEe-MgPjQfdAhNA"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/hamza/Desktop/PFE/les Filiales/AMADEUS/Activité/Indicateurs activité forma standard.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:SL+uJePFEBx/Cr78FMmx9CokT67Hb8T0+pv62RTw"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:HEjQSQg6ysGQ6UbATTVZG1j2RwVziw1Lw/s35aI6"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
-      <elementValue elementRef="SHEETNAME" value="&quot;tab3&quot;"/>
+      <elementValue elementRef="SHEETNAME" value="&quot;Sheet2&quot;"/>
       <elementValue elementRef="USE_REGEX" value=""/>
     </elementParameter>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -127,20 +127,28 @@
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_vVyXYDICEe-MgPjQfdAhNA - metadata"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_vVyXYDICEe-MgPjQfdAhNA - metadata"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="','"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="'.'"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Turn_Over"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Categorie"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Age_moyen"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="effectif"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Anciennete_moyenne"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mois__m_1"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Parite_H__Nbr"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Entrees"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Parite_F__Nbr"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sorties"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mois__m"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_1__m"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="mois"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -149,19 +157,25 @@
     </elementParameter>
     <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
     <elementParameter field="TABLE" name="DATESELECT" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Turn_Over"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Categorie"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Age_moyen"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="effectif"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Anciennete_moyenne"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mois__m_1"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Parite_H__Nbr"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Entrees"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Parite_F__Nbr"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sorties"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mois__m"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_1__m"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="mois"/>
@@ -181,35 +195,39 @@
     <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
     <elementParameter field="CHECK" name="CONFIGURE_INFLATION_RATIO" value="false"/>
     <elementParameter field="TEXT" name="INFLATION_RATIO" show="false" value=""/>
-    <elementParameter field="TEXT" name="LABEL" value="metadata"/>
+    <elementParameter field="TEXT" name="LABEL" value="effectif"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
-      <column comment="" key="false" length="-1" name="Turn_Over" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Age_moyen" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Anciennete_moyenne" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Parite_H__Nbr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Parite_F__Nbr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Categorie" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="effectif" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Mois__m_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Entrees" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Sorties" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Mois__m" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="N_1__m" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="mois" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="annee" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="-1" name="Turn_Over" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Age_moyen" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Anciennete_moyenne" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Parite_H__Nbr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Parite_F__Nbr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Categorie" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="effectif" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Mois__m_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Entrees" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Sorties" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Mois__m" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="N_1__m" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="mois" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="annee" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_HoBXQCcCEe-VmN7FMlee-g-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_t3_eoB0EEe-D5vwpFArkvQ-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -218,61 +236,71 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="TABLE_KPI" name="toFactKPI">
-      <column key="false" length="-1" name="Turn_Over" nullable="true" originalDbColumnName="Turn Over" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+    <metadata connector="FLOW" label="EFFECTIF" name="effectifToDB">
+      <column comment="" key="false" length="50" name="CATEGORIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Age_moyen" nullable="true" originalDbColumnName="Age moyen" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="50" name="EFFECTIF" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Anciennete_moyenne" nullable="true" originalDbColumnName="Ancienneté moyenne" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Mois__m_1" nullable="true" originalDbColumnName="Mois (m-1)" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Parite_H__Nbr" nullable="true" originalDbColumnName="Parité H (Nbr)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="ENTREES" nullable="true" originalDbColumnName="ENTRÉES" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Parite_F__Nbr" nullable="true" originalDbColumnName="Parité F (Nbr)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="SORTIES" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Parite_H" nullable="true" originalDbColumnName="Parité H (%)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Mois__m" nullable="true" originalDbColumnName="Mois (m)" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Parite_F" nullable="true" originalDbColumnName="Parité F (%)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="N_1__m" nullable="true" originalDbColumnName="N-1 (m)" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="MOIS" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Evolution__m_1" nullable="true" originalDbColumnName="Evolution (m-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="ANNEE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Evolution__N_1" nullable="true" originalDbColumnName="Evolution (N-1)" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="MOIS" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="ANNEE" nullable="true" originalDbColumnName="ANNÉE" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="toFactKPI" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1.Turn_Over " name="Turn_Over" nullable="true" type="id_Float"/>
-        <mapperTableEntries expression="row1.Age_moyen " name="Age_moyen" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row1.Anciennete_moyenne " name="Anciennete_moyenne" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row1.Parite_H__Nbr " name="Parite_H__Nbr" nullable="true" type="id_Float"/>
-        <mapperTableEntries expression="row1.Parite_F__Nbr " name="Parite_F__Nbr" nullable="true" type="id_Float"/>
-        <mapperTableEntries expression="(row1.Parite_H__Nbr / (row1.Parite_H__Nbr + row1.Parite_F__Nbr)) " name="Parite_H" nullable="true" type="id_Float"/>
-        <mapperTableEntries expression="(row1.Parite_F__Nbr /(row1.Parite_H__Nbr + row1.Parite_F__Nbr ) ) " name="Parite_F" nullable="true" type="id_Float"/>
+      <outputTables name="effectifToDB" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.Categorie " name="CATEGORIE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.effectif " name="EFFECTIF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="Mois__m_1" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="" name="ENTREES" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="" name="SORTIES" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="" name="Mois__m" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="" name="N_1__m" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="Evolution__m_1" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Evolution__N_1" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row1.mois " name="MOIS" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row1.annee " name="ANNEE" nullable="true" type="id_Integer"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="Turn_Over" nullable="true" type="id_Float"/>
-        <mapperTableEntries name="Age_moyen" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Anciennete_moyenne" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Parite_H__Nbr" nullable="true" type="id_Float"/>
-        <mapperTableEntries name="Parite_F__Nbr" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Categorie" nullable="true" type="id_String"/>
+        <mapperTableEntries name="effectif" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Mois__m_1" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Entrees" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Sorties" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Mois__m" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="N_1__m" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="mois" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="annee" nullable="true" type="id_Integer"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="192">
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="__S-NMBKPEe-UefQLzpLX6Q"/>
@@ -288,13 +316,11 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;orcl&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;lakrad&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Tx4tMizfMF2k/qQzY+eGqeZ8Hi4xnVxhr162mMUt4AyZiQ=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;TABLE_KPI&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fbaoObdxTr0PEJEZxJ+YYf6JZWljgS9fbvYaTwlKA4UQUg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;EFFECTIF&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="__S-NMBKPEe-UefQLzpLX6Q - TABLE_KPI"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -311,37 +337,47 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Turn_Over"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CATEGORIE"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Age_moyen"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EFFECTIF"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Anciennete_moyenne"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mois__m_1"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Parite_H__Nbr"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ENTREES"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Parite_F__Nbr"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SORTIES"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Parite_H"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mois__m"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Parite_F"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_1__m"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Evolution__m_1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Evolution__N_1"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -371,61 +407,73 @@
     <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="TABLE_KPI" name="tDBOutput_1">
-      <column comment="" key="false" length="-1" name="Turn_Over" nullable="true" originalDbColumnName="Turn Over" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+    <metadata connector="FLOW" label="EFFECTIF" name="tDBOutput_1">
+      <column comment="" key="false" length="50" name="CATEGORIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="Age_moyen" nullable="true" originalDbColumnName="Age moyen" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="50" name="EFFECTIF" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="Anciennete_moyenne" nullable="true" originalDbColumnName="Ancienneté moyenne" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Mois__m_1" nullable="true" originalDbColumnName="Mois (m-1)" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="Parite_H__Nbr" nullable="true" originalDbColumnName="Parité H (Nbr)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="ENTREES" nullable="true" originalDbColumnName="ENTRÉES" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="Parite_F__Nbr" nullable="true" originalDbColumnName="Parité F (Nbr)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="SORTIES" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="Parite_H" nullable="true" originalDbColumnName="Parité H (%)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Mois__m" nullable="true" originalDbColumnName="Mois (m)" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="Parite_F" nullable="true" originalDbColumnName="Parité F (%)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="N_1__m" nullable="true" originalDbColumnName="N-1 (m)" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="Evolution__m_1" nullable="true" originalDbColumnName="Evolution (m-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="Evolution__N_1" nullable="true" originalDbColumnName="Evolution (N-1)" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="MOIS" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="ANNEE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="ANNEE" nullable="true" originalDbColumnName="ANNÉE" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
-    <metadata connector="REJECT" label="TABLE_KPI" name="REJECT">
-      <column key="false" length="-1" name="Turn_Over" nullable="true" originalDbColumnName="Turn Over" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+    <metadata connector="REJECT" label="EFFECTIF" name="REJECT">
+      <column comment="" key="false" length="50" name="CATEGORIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Age_moyen" nullable="true" originalDbColumnName="Age moyen" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="50" name="EFFECTIF" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Anciennete_moyenne" nullable="true" originalDbColumnName="Ancienneté moyenne" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Mois__m_1" nullable="true" originalDbColumnName="Mois (m-1)" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Parite_H__Nbr" nullable="true" originalDbColumnName="Parité H (Nbr)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="ENTREES" nullable="true" originalDbColumnName="ENTRÉES" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Parite_F__Nbr" nullable="true" originalDbColumnName="Parité F (Nbr)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="SORTIES" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Parite_H" nullable="true" originalDbColumnName="Parité H (%)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Mois__m" nullable="true" originalDbColumnName="Mois (m)" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="Parite_F" nullable="true" originalDbColumnName="Parité F (%)" pattern="" precision="-1" sourceType="NUMBER" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="N_1__m" nullable="true" originalDbColumnName="N-1 (m)" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="MOIS" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Evolution__m_1" nullable="true" originalDbColumnName="Evolution (m-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="-1" name="ANNEE" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Evolution__N_1" nullable="true" originalDbColumnName="Evolution (N-1)" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="MOIS" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="ANNEE" nullable="true" originalDbColumnName="ANNÉE" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
@@ -436,22 +484,22 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="toFactKPI" lineStyle="0" metaname="toFactKPI" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="effectifToDB" lineStyle="0" metaname="effectifToDB" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="toFactKPI"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="effectifToDB"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cd108017-dc88-45c7-9e4c-ae9690de7730"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wyXr0z/oTTKVOpv2hGNO5IQHKUddoQiiNgzsWhl8Pv2E0ydjBYoMqivMDo5SA6IdU9neyiNAJWw1&#13;
-zZZo0AmN1A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_edce56cb-7a45-4c6f-9bb0-51982719cff9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RGzyeNXMfuHRk6SKayA5X4zQt2DnQ67bvvGOMN06qaFK0gixlpnFjRtb5I6/vZBRCAjbH0Slfs1u&#13;
-h2IFRRzywA==</DigestValue></Reference></SignedInfo><SignatureValue>MqKSgJSh4BZS9rmOk979+0kuCxxjXpTEpHJ15MRoRnU67QjiLDF94qvovqpKvFk9QP1RVq/9bFxp&#13;
-2KP+lSk7Xzc13Z8+8uoL1HLbsEcU1CnPli3rzUsCBJPonV9f0HT9vXsBLTmSkdLzSgQOIsIy/lAX&#13;
-ZC2SZWW/tjqzx10mXX6jQU+nJXmPjjFK5K7XDqp6Jt7XeBB3lYTztGZ7IK7AM+qAT2m53JFVf2wX&#13;
-JvZg6u2rft7omRFckf6e7GqaFC63GJgIUpI47i74YezbzJ5bemfVS/exH6VWdOi+PuNzM4JkAXuu&#13;
-pJ/WbH1NsscICakGi9KOi+ow/wqbq0m0GbR1QQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a7ce208c-22c9-4526-8f6f-3215eec5c7e6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fujybaaHBiP+mZh97iHrcan4qYDWKZ43bWyotzOh2BNowxUf6qe/2qgqhy+L/9sq81uOC9pmCGDi&#13;
+Brmi1YJxog==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b4d1c96b-f8ee-4a6f-91f7-a4b1a53aef0c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nyZhXb/QiCXmWFNBQh34DGvtXJcr6sGvk0dlRcCSov3BhqifjAee0hQFtRFLwXQsdD2bjJMeDaAe&#13;
+C2+bBgIclg==</DigestValue></Reference></SignedInfo><SignatureValue>pUBjeHbJCrczgV2oDjFT4DXCl3q78lyGBdnN4vHrxwrQ6LdrhvaQS6A/e5XkCUyiCuAF23LcHVc9&#13;
+u6elEc4YuEi3/TjB5uS68rM+WdLcD57ujZGs1PNj/bm9ybcFbhTd/OuoI5GA9rrPGdKQCPwOA/5d&#13;
+MciGUcxyiMCw7JJ+RJp2geV5SToQ7cJmNXOoulgpKGcvcETxBYInvM5Nm34OZGGSEPWH2E/hq0hb&#13;
+aUOo4Nexbc4WVmMKqsnrImVVYOcn5DzVoauCjMJ/+SK5Sq6RtXbx9xy/9meeDZaakH3paO2FW7AQ&#13;
+mp7hhOPqs6ryXgUfCPZMU3r2yJ6nOuA2H0Y2aw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -473,4 +521,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_edce56cb-7a45-4c6f-9bb0-51982719cff9" Target="#_cd108017-dc88-45c7-9e4c-ae9690de7730"><Timestamp>2024-06-10 13:12:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b4d1c96b-f8ee-4a6f-91f7-a4b1a53aef0c" Target="#_a7ce208c-22c9-4526-8f6f-3215eec5c7e6"><Timestamp>2024-06-27 13:49:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
